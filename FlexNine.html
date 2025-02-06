@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .flexNine{
+            display: flex;
+            width: 450px;
+            height: 250px;
+            background-color: #eeeeee;
+
+        }
+        .flexNine> .blocks{
+            display: flex;
+            justify-content: flex-start;
+        }    
+
+
+        .block{
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        #square3{
+            align-self: flex-end;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flexNine">
+        <div class="blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block" id="square3"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

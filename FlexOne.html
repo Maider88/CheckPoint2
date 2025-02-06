@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexOne{
+            display: flex;
+        }
+
+        .flexOne> .blocks{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 1000px;
+        }
+
+        .block{
+            background-color: cadetblue;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="flexOne">
+        <div class="blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

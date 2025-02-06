@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+         .flexThree{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin: 20px;
+        }
+
+        .flexThree> .blocks{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row-reverse;
+            width: 1000px;
+        }
+
+        .block{
+            background-color: cadetblue;
+            width: 80px;
+            height: 80px;
+            margin: 2px;            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexThree">
+        <div class="blocks">
+            <div class="block block1">1</div>
+            <div class="block block2">2</div>
+            <div class="block block3">3</div>
+        </div>
+    </div>
+    
+</body>
+</html>
