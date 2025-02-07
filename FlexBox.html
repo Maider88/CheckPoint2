@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexOne{
+            display: flex;
+        }
+
+        .flexOne> .blocks{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 1000px;
+        }
+
+        .flexOne .block{
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            
+        }  
+        .flexTwo{
+            display: flex;
+    }
+
+    .flexTwo> .blocks{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 1000px;
+    }
+
+    .flexTwo .block{
+        background-color: cadetblue;
+        width: 100px;
+        height: 100px;
+        margin: 2px;
+        
+    }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+         .flexThree{
+            display: flex;
+            justify-content: left;
+            align-items:center;
+            margin: 20px;
+        }
+
+        .flexThree> .blocks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .flexThree .block{
+            background-color: cadetblue;
+            width: 100px;
+            height: 100px;
+            margin: 2px;            
+        }
+
+        .flexFour{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin: 20px;
+            width: 350px;
+        }
+
+        .flexFour> .blocks{
+            display: flex;
+            width: auto;
+            flex-flow: wrap;
+        }
+
+        .flexFour .block{
+            height: 100px;
+            width: 100px;
+            background-color:#3d8b6d;
+            margin: 5px;            
+        }
+
+        .flexFive{
+            margin:10px;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;         
+        }
+
+        .flexFive .blocks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+
+        }
+
+        .flexFive .block{
+            background-color: #0b6643;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+        }
+
+
+       .flexFive #block2{
+            flex-grow: 2;
+       }
+
+       .flexSix{
+            display: flex;
+            height: 400px;
+            width: 500px;
+            background-color: #f1f1f1;
+            flex-direction: column;
+        }
+
+        .flexSix .block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;
+        }
+
+        .flexSix .One{
+            display: flex;
+            justify-content: space-around;   
+        }
+
+        .flexSix .Two{
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0;
+            background-color: #d6d6d6;
+        }
+
+        .flexSix .Three{
+           display: flex;
+           justify-content: space-evenly;
+        }
+
+        .flexSeven{
+            display: flex;
+            justify-content: space-between;
+            height: 400px;
+            width: 500px;
+            background-color: #f1f1f1;
+        }
+
+        .flexSeven .block{
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;            
+        }
+
+        .flexSeven .One{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .flexSeven .Two{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            background-color: #d6d6d6;
+        }
+
+        .flexSeven .Three{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .flexSeven .Four{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            background-color: #d6d6d6;
+        }
+
+        .flexEight{
+            display: flex;
+            height: 400px;
+            width: 300px;
+            background-color: #eeeeee;
+        }
+
+        .flexEight .block{
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;           
+        }
+
+        .flexEight .One{
+            display: flex;
+            align-items: center;
+        }
+
+        .flexEight .Two{
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .flexEight .Three{
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .flexNine{
+            display: flex;
+            width: 450px;
+            height: 250px;
+            background-color: #eeeeee;
+
+        }
+        .flexNine> .blocks{
+            display: flex;
+            justify-content: flex-start;
+        }    
+
+
+        .flexNine .block{
+            background-color: lightseagreen;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .flexNine #square3{
+            align-self: flex-end;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <br>FlexOne</br>
+    </div>
+
+    <div class="flexOne">
+        <div class="blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexTwo</br>
+    </div>
+    
+
+</style>
+</head>
+<body>
+    <div class="flexTwo">
+        <div class="blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexThree</br>
+    </div>
+
+    <div class="flexThree">
+        <div class="blocks">
+            <div class="block block1">1</div>
+            <div class="block block2">2</div>
+            <div class="block block3">3</div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexFour</br>
+    </div>
+
+    <div class="flexFour">
+        <div class="blocks">
+            <div class="block block1"></div>
+            <div class="block block2"></div>
+            <div class="block block3"></div>
+            <div class="block block4"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexFive</br>
+    </div>
+
+    <div class="flexFive">
+        <div class="blocks">
+            <div class="block block1"></div>
+            <div class="block block2" id="block2"></div>
+            <div class="block block3"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexSix</br>
+    </div>
+
+    <div class="flexSix">
+        <div class="blocks">
+            <div class="One">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="Two">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            <div class="Three">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>    
+        </div>
+    </div>
+
+    <div>
+        <br>FlexSeven</br>
+    </div>
+
+    <div class="flexSeven">
+        <div class="One">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="Two">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="Three">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="Four">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexEight</br>
+    </div>
+
+    <div class="flexEight">
+        <div class="One">
+            <div class="block"></div>
+        </div>
+        <div class="Two">
+            <div class="block"></div>
+        </div>
+        <div class="Three">
+            <div class="block"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>FlexNine</br>
+    </div>
+
+    <div class="flexNine">
+        <div class="blocks">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block" id="square3"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+</body>
+</html>
